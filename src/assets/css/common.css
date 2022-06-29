@@ -1,0 +1,294 @@
+@import url("./reset.css");
+@import url("../iconfont/iconfont.css");
+
+.unSelected {
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+line, path, polygon, polyline {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.nav-column .el-tabs__header{
+    display: none;
+}
+.epc-search-bar .el-input input{
+    border: none;
+    padding: 0;
+}
+.epc-tree .el-tree-node__children > .el-tree-node > .el-tree-node__content{
+    padding-left: 10px !important;
+}
+.epc-tree .el-tree-node__children > .el-tree-node > .el-tree-node__children .el-tree-node__content {
+    padding-left: 25px !important;
+}
+.bottom-bar{
+    font-family: 'Alibaba Sans';
+}
+.epc-search-bar{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    position: relative;
+}
+.epc-search-bar i{
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.epc-search-bar:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #dcdfe6;
+}
+.epc-tree{
+    padding: 15px 10px 65px;
+    font-size: 14px;
+}
+.tree-node{
+    display: flex;
+    align-items: center;
+}
+.tree-node span{
+    font-size: 13px;
+}
+.tree-node.cur{
+    color: #FF9900;
+}
+.tree-node span{
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.epc-list tr th{
+    padding: 5px 0;
+    background: #E9E9F0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #666;
+    font-family: 'Alibaba Sans';
+}
+.nature-bar-wrap > .el-scrollbar > .el-scrollbar__wrap{
+    overflow-x: hidden !important;
+}
+.epc-list-wrap .el-scrollbar__wrap{
+    overflow-x: hidden;
+}
+.epc-table thead{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.epc-table thead tr{
+    width: 100%;
+    display: none;
+}
+.epc-table thead th{
+    width: 50%;
+}
+.epc-table .el-table td{
+    padding: 10px 0;
+    font-size: 13px;
+}
+.nature-bar-list{
+
+}
+.nature-bar-list .el-collapse-item__header{
+    padding: 0 10px 0;
+    height: 35px;
+    background: #EEEEEf;
+}
+.nature-bar-list .el-collapse-item__wrap{
+    border-bottom: 0;
+}
+.nature-bar-list .el-collapse-item__content{
+    padding-bottom: 0;
+}
+.n-l-right .el-select .el-input .el-select__caret{
+    height: 28px;
+}
+.n-l-right .el-input--mini .el-input__inner{
+    padding: 0 10px;
+}
+.canvas-tabs .el-tabs__item{
+    height: 29px;
+    line-height: 29px;
+}
+
+.sch .is-hover{
+    stroke: rgb(255, 0, 0);
+}
+.sch .is-select{
+    stroke: rgb(255, 0, 0);
+}
+.sch text.is-hover{
+    fill: rgb(255,0,0) !important;
+}
+.sch text.is-select{
+    fill: rgb(255,0,0) !important;
+}
+
+.sch_element .is-hover{
+    stroke: rgb(255, 0, 0);
+}
+.sch_element .is-select{
+    stroke: rgb(255, 0, 0);
+}
+.sch_element text.is-hover{
+    fill: rgb(255,0,0) !important;
+}
+.sch_element text.is-select{
+    fill: rgb(255,0,0) !important;
+}
+
+.pcb .is-hover{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb .is-select{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb text.is-hover{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb text.is-select{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+
+.pcb_element .is-hover{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb_element .is-select{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb_element text.is-hover{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb_element text.is-select{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+
+
+.cursor-grabbing{
+    cursor: -webkit-grabbing !important;
+    cursor: grabbing !important;
+}
+.cursor-move{
+    cursor: -webkit-move !important;
+    cursor: move !important;
+}
+.pindot{
+    visibility: hidden;
+}
+
+.sch .is-select .pindot{
+    visibility: visible !important;
+}
+.sch .is-hover circle, .sch .is-hover line, .sch .is-hover path, .sch .is-hover ellipse, .sch .is-hover polyline, .sch .is-hover polygon, .sch .is-hover rect{
+    stroke: rgb(255, 0, 0);
+}
+.sch .is-select circle, .sch .is-select line, .sch .is-select path, .sch .is-select ellipse, .sch .is-select polyline, .sch .is-select polygon, .sch .is-select rect{
+    stroke: rgb(255, 0, 0);
+}
+.sch .is-hover text{
+    fill: rgb(255,0,0) !important;
+}
+.sch .is-select text{
+    fill: rgb(255,0,0) !important;
+}
+.sch .is-hover .pindot{
+    stroke: none;
+}
+.sch .is-select .pindot{
+    stroke: none;
+    visibility: visible;
+}
+
+.sch_element .is-hover circle, .sch_element .is-hover line, .sch_element .is-hover path, .sch_element .is-hover ellipse, .sch_element .is-hover polyline, .sch_element .is-hover polygon, .sch_element .is-hover rect{
+    stroke: rgb(255, 0, 0);
+}
+.sch_element .is-select circle, .sch_element .is-select line, .sch_element .is-select path, .sch_element .is-select ellipse, .sch_element .is-select polyline, .sch_element .is-select polygon, .sch_element .is-select rect{
+    stroke: rgb(255, 0, 0);
+}
+.sch_element .is-hover text{
+    fill: rgb(255,0,0) !important;
+}
+.sch_element .is-select text{
+    fill: rgb(255,0,0) !important;
+}
+.sch_element .is-hover .pindot{
+    stroke: none;
+}
+.sch_element .is-select .pindot{
+    stroke: none;
+    visibility: visible;
+}
+
+.pcb .is-select .pindot{
+    visibility: visible;
+}
+.pcb .is-hover circle, .pcb .is-hover line, .pcb .is-hover path, .pcb .is-hover ellipse, .pcb .is-hover polyline, .pcb .is-hover polygon, .pcb .is-hover rect{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb .is-select circle, .pcb .is-select line, .pcb .is-select path, .pcb .is-select ellipse, .pcb .is-select polyline, .pcb .is-select polygon, .pcb .is-select rect{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb .is-hover text{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb .is-select text{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb .is-hover .pindot{
+    stroke: none;
+}
+.pcb .is-select .pindot{
+    stroke: none;
+    visibility: visible;
+}
+
+.pcb_element .is-hover circle, .pcb_element .is-hover line, .pcb_element .is-hover path, .pcb_element .is-hover ellipse, .pcb_element .is-hover polyline, .pcb_element .is-hover polygon, .pcb_element .is-hover rect{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb_element .is-select circle, .pcb_element .is-select line, .pcb_element .is-select path, .pcb_element .is-select ellipse, .pcb_element .is-select polyline, .pcb_element .is-select polygon, .pcb_element .is-select rect{
+    stroke: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+.pcb_element .is-hover text{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb_element .is-select text{
+    stroke: rgba(255, 255, 255, 0.6) !important;
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.pcb_element .is-hover .pindot{
+    stroke: none;
+}
+.pcb_element .is-select .pindot{
+    stroke: none;
+    visibility: visible;
+}
